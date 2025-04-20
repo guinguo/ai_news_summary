@@ -1,0 +1,89 @@
+# STEP1
+
+## 背景
+你是一位高级架构师，能够根据提供的要求设计项目架构，项目脚手架，然后初步根据要求，完善整个项目的代码，让它能够顺利工作起来
+
+## 项目说明
+本项目采用selenium爬虫技术，定时从网站列表爬取新闻跟咨询，然后通过AI进行总结，可选的AI包括chatgpt、grok、gemini、qwen等。
+因为爬虫的站点比较多，不同网站的组织形式各不相同，你需要设计一个通用的网页内容识别逻辑，同时能够支持自定义特殊网页内容识别规则。
+
+## 爬取要求
+对于每个站点，爬取到的标题跟链接，需要经过AI来识别是否有效，如果有效再进一步爬取标题里面的内容，每个站点只爬取2层。
+针对爬取后的内容，需要经过AI进行内容提炼总结，提炼出标题跟内容，标题不超过50个字符，内容不超过500个字符。
+
+## 设计
+请从项目的脚手架设计开始，包括requirement、项目入口、项目组织，设计尽量遵循常用设计模式，便于后续维护与扩展
+
+## 开发
+请根据设计结果，编写代码实现功能，代码需要有良好的命名规范，合理的抽象与封装
+
+# STEP1_OUTPUT
+现在我了解了项目的需求和架构规划，接下来我将为AI新闻摘要项目设计架构并实现相关代码。
+
+AI新闻摘要系统
+根据需求，这是一个使用Selenium爬虫技术从多个网站爬取新闻，并通过AI（如ChatGPT、Grok、Gemini、Qwen等）进行总结的系统。下面我将设计项目架构并实现相关代码。
+
+项目架构设计
+项目将遵循模块化设计，采用工厂模式、策略模式和观察者模式等设计模式，便于后续扩展和维护。
+
+目录结构设计
+ai_news_summary/
+├── config/                      # 配置文件目录
+│   ├── __init__.py
+│   ├── site_config.py           # 网站配置信息
+│   └── settings.py              # 全局配置
+├── core/                        # 核心功能模块
+│   ├── __init__.py
+│   ├── crawler/                 # 爬虫模块
+│   │   ├── __init__.py
+│   │   ├── base_crawler.py      # 爬虫基类
+│   │   ├── crawler_factory.py   # 爬虫工厂
+│   │   └── site_crawlers/       # 各站点特定爬虫
+│   │       ├── __init__.py
+│   │       ├── oschina_crawler.py
+│   │       └── ...
+│   ├── parser/                  # 解析器模块
+│   │   ├── __init__.py
+│   │   ├── base_parser.py       # 解析器基类
+│   │   ├── parser_factory.py    # 解析器工厂
+│   │   └── site_parsers/        # 站点特定解析器
+│   │       ├── __init__.py
+│   │       ├── common_parser.py  # 通用解析器
+│   │       └── ...
+│   ├── ai/                      # AI模块
+│   │   ├── __init__.py
+│   │   ├── base_ai.py           # AI基类
+│   │   ├── ai_factory.py        # AI工厂
+│   │   └── providers/           # 不同AI提供商
+│   │       ├── __init__.py
+│   │       ├── openai_provider.py
+│   │       ├── grok_provider.py
+│   │       └── ...
+│   └── storage/                 # 存储模块
+│       ├── __init__.py
+│       ├── base_storage.py      # 存储基类
+│       ├── storage_factory.py   # 存储工厂
+│       └── providers/           # 存储提供者
+│           ├── __init__.py
+│           ├── file_storage.py
+│           └── ...
+├── utils/                       # 工具函数
+│   ├── __init__.py
+│   ├── logger.py                # 日志工具
+│   └── helpers.py               # 辅助函数
+├── data/                        # 数据存储
+│   └── output/                  # 摘要输出
+├── logs/                        # 日志文件
+├── tests/                       # 测试目录
+│   ├── __init__.py
+│   ├── test_crawler.py
+│   └── ...
+├── main.py                      # 程序入口
+├── run.py                       # 运行脚本
+└── requirements.txt             # 依赖库
+...
+
+# STEP2
+请编写一个脚本用于 目录结构设计 的目录与文件初始化创建
+
+

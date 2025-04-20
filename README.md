@@ -1,5 +1,5 @@
 auto crawling news and using ai(like chatgpt) to summary daily.
-newx from next table:
+news from next table:
 
 | 网站名称   | 主页地址                |
 |------------|-------------------------|
@@ -38,3 +38,4 @@ newx from next table:
 | 科普中国   | https://www.kepu.gov.cn|
 
 this repo build by AI.
+

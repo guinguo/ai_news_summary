@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.swp
+.idea
+.python-version
+.flake8
+.DS_Store

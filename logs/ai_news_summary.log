@@ -1,0 +1,70 @@
+2025-04-20 15:04:55,142 - __main__ - INFO - AI新闻摘要系统启动
+2025-04-20 15:04:55,142 - root - WARNING - 环境变量文件不存在: /Users/guin_guo/test/github/ai_news_summary/.env
+2025-04-20 15:04:55,143 - core.storage.storage_factory - INFO - 创建存储 - 类型: file
+2025-04-20 15:04:55,143 - core.storage.base_storage - INFO - 初始化存储 - FileStorage
+2025-04-20 15:04:55,143 - core.storage.providers.file_storage - INFO - 文件存储初始化成功，输出目录: /Users/guin_guo/test/github/ai_news_summary/data/output
+2025-04-20 15:04:55,143 - core.ai.ai_factory - INFO - 创建AI服务 - 类型: openai
+2025-04-20 15:04:55,143 - core.ai.base_ai - INFO - 初始化AI服务 - OpenAIProvider
+2025-04-20 15:04:55,143 - core.ai.providers.openai_provider - WARNING - 未设置OpenAI API密钥，将无法使用OpenAI服务
+2025-04-20 15:04:55,144 - __main__ - INFO - 开始处理站点: 开源中国
+2025-04-20 15:04:55,144 - core.crawler.crawler_factory - INFO - 创建爬虫 - 开源中国 - 类型: common
+2025-04-20 15:04:55,144 - core.crawler.base_crawler - INFO - 初始化爬虫 - 开源中国
+2025-04-20 15:04:55,144 - core.crawler.base_crawler - INFO - 开始爬取 - 开源中国
+2025-04-20 15:08:03,916 - __main__ - INFO - AI新闻摘要系统启动
+2025-04-20 15:08:03,916 - root - WARNING - 环境变量文件不存在: /Users/guin_guo/test/github/ai_news_summary/.env
+2025-04-20 15:08:03,917 - core.storage.storage_factory - INFO - 创建存储 - 类型: file
+2025-04-20 15:08:03,917 - core.storage.base_storage - INFO - 初始化存储 - FileStorage
+2025-04-20 15:08:03,917 - core.storage.providers.file_storage - INFO - 文件存储初始化成功，输出目录: /Users/guin_guo/test/github/ai_news_summary/data/output
+2025-04-20 15:08:03,917 - core.ai.ai_factory - INFO - 创建AI服务 - 类型: openai
+2025-04-20 15:08:03,918 - core.ai.base_ai - INFO - 初始化AI服务 - OpenAIProvider
+2025-04-20 15:08:03,918 - core.ai.providers.openai_provider - WARNING - 未设置OpenAI API密钥，将无法使用OpenAI服务
+2025-04-20 15:08:03,918 - __main__ - INFO - 开始处理站点: 开源中国
+2025-04-20 15:08:03,918 - core.crawler.crawler_factory - INFO - 创建爬虫 - 开源中国 - 类型: common
+2025-04-20 15:08:03,918 - core.crawler.base_crawler - INFO - 初始化爬虫 - 开源中国
+2025-04-20 15:08:03,918 - core.crawler.base_crawler - INFO - 开始爬取 - 开源中国
+2025-04-20 15:08:56,577 - __main__ - INFO - AI新闻摘要系统启动
+2025-04-20 15:08:56,577 - root - WARNING - 环境变量文件不存在: /Users/guin_guo/test/github/ai_news_summary/.env
+2025-04-20 15:08:56,577 - core.storage.storage_factory - INFO - 创建存储 - 类型: file
+2025-04-20 15:08:56,578 - core.storage.base_storage - INFO - 初始化存储 - FileStorage
+2025-04-20 15:08:56,578 - core.storage.providers.file_storage - INFO - 文件存储初始化成功，输出目录: /Users/guin_guo/test/github/ai_news_summary/data/output
+2025-04-20 15:08:56,578 - core.ai.ai_factory - INFO - 创建AI服务 - 类型: openai
+2025-04-20 15:08:56,578 - core.ai.base_ai - INFO - 初始化AI服务 - OpenAIProvider
+2025-04-20 15:08:56,578 - core.ai.providers.openai_provider - WARNING - 未设置OpenAI API密钥，将无法使用OpenAI服务
+2025-04-20 15:08:56,579 - __main__ - INFO - 开始处理站点: 开源中国
+2025-04-20 15:08:56,579 - core.crawler.crawler_factory - INFO - 创建爬虫 - 开源中国 - 类型: common
+2025-04-20 15:08:56,579 - core.crawler.base_crawler - INFO - 初始化爬虫 - 开源中国
+2025-04-20 15:08:56,579 - core.crawler.base_crawler - INFO - 开始爬取 - 开源中国
+2025-04-20 15:12:55,382 - core.crawler.base_crawler - ERROR - 获取页面内容失败 - https://www.oschina.net: 'NoneType' object has no attribute 'get'
+2025-04-20 15:12:55,385 - core.crawler.base_crawler - ERROR - 无法获取主页内容 - 开源中国
+2025-04-20 15:12:55,385 - __main__ - INFO - 开始处理站点: 网易
+2025-04-20 15:12:55,386 - core.crawler.crawler_factory - INFO - 创建爬虫 - 网易 - 类型: common
+2025-04-20 15:12:55,387 - core.crawler.base_crawler - INFO - 初始化爬虫 - 网易
+2025-04-20 15:12:55,388 - core.crawler.base_crawler - INFO - 开始爬取 - 网易
+2025-04-20 15:13:00,439 - core.crawler.base_crawler - ERROR - 获取页面内容失败 - https://www.163.com: 'NoneType' object has no attribute 'get'
+2025-04-20 15:13:00,439 - core.crawler.base_crawler - ERROR - 无法获取主页内容 - 网易
+2025-04-20 15:13:00,440 - __main__ - INFO - 所有站点处理处理完成
+2025-04-20 15:15:06,686 - __main__ - INFO - AI新闻摘要系统启动
+2025-04-20 15:15:06,687 - root - WARNING - 环境变量文件不存在: /Users/guin_guo/test/github/ai_news_summary/.env
+2025-04-20 15:15:06,688 - core.storage.storage_factory - INFO - 创建存储 - 类型: file
+2025-04-20 15:15:06,688 - core.storage.base_storage - INFO - 初始化存储 - FileStorage
+2025-04-20 15:15:06,689 - core.storage.providers.file_storage - INFO - 文件存储初始化成功，输出目录: /Users/guin_guo/test/github/ai_news_summary/data/output
+2025-04-20 15:15:06,689 - core.ai.ai_factory - INFO - 创建AI服务 - 类型: openai
+2025-04-20 15:15:06,690 - core.ai.base_ai - INFO - 初始化AI服务 - OpenAIProvider
+2025-04-20 15:15:06,690 - core.ai.providers.openai_provider - WARNING - 未设置OpenAI API密钥，将无法使用OpenAI服务
+2025-04-20 15:15:06,690 - __main__ - INFO - 开始处理站点: 开源中国
+2025-04-20 15:15:06,691 - core.crawler.crawler_factory - INFO - 创建爬虫 - 开源中国 - 类型: common
+2025-04-20 15:15:06,691 - core.crawler.base_crawler - INFO - 初始化爬虫 - 开源中国
+2025-04-20 15:15:06,692 - core.crawler.base_crawler - INFO - 开始爬取 - 开源中国
+2025-04-20 15:15:15,621 - core.crawler.site_crawlers.common_crawler - INFO - 使用列表选择器 - 开源中国
+2025-04-20 15:15:15,708 - core.crawler.site_crawlers.common_crawler - INFO - 提取到 0 个新闻链接 - 开源中国
+2025-04-20 15:15:15,708 - core.crawler.base_crawler - INFO - 从主页获取了 0 个新闻链接 - 开源中国
+2025-04-20 15:15:15,918 - core.crawler.base_crawler - INFO - Selenium WebDriver 已关闭 - 开源中国
+2025-04-20 15:15:15,919 - __main__ - INFO - 开始处理站点: 网易
+2025-04-20 15:15:15,919 - core.crawler.crawler_factory - INFO - 创建爬虫 - 网易 - 类型: common
+2025-04-20 15:15:15,919 - core.crawler.base_crawler - INFO - 初始化爬虫 - 网易
+2025-04-20 15:15:15,921 - core.crawler.base_crawler - INFO - 开始爬取 - 网易
+2025-04-20 15:15:30,354 - core.crawler.site_crawlers.common_crawler - INFO - 使用列表选择器 - 网易
+2025-04-20 15:15:30,393 - core.crawler.site_crawlers.common_crawler - INFO - 提取到 0 个新闻链接 - 网易
+2025-04-20 15:15:30,394 - core.crawler.base_crawler - INFO - 从主页获取了 0 个新闻链接 - 网易
+2025-04-20 15:15:30,665 - core.crawler.base_crawler - INFO - Selenium WebDriver 已关闭 - 网易
+2025-04-20 15:15:30,665 - __main__ - INFO - 所有站点处理处理完成
